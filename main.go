@@ -1,8 +1,18 @@
 package main
 
-import "schools42-level0/aff_a"
+import (
+	"fmt"
+	"os"
+	"schools42-level0/aff_a"
+)
 
 func main() {
-	sampleString := "Hello world Go programmers"
-	aff_a.DisplayFirstA(sampleString)
+	args := os.Args
+	if len(args) == 2 {
+
+		sampleString := args[1]
+		aff_a.DisplayFirstA(sampleString)
+	} else {
+		fmt.Println("a")
+	}
 }
