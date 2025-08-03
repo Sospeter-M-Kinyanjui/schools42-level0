@@ -1,9 +1,9 @@
 package main
 
 import (
-	"schools42-level0/alpha"
+	"schools42-level0/justSayZ"
 )
 
 func main() {
-	alpha.PrintAlphaLetters()
+	justSayZ.SayIt()
 }
